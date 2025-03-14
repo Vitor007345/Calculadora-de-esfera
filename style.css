@@ -68,4 +68,62 @@ body{
     margin-left: 20px;
 }
 
+.container > div:not(.raio) > p:nth-of-type(2){
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-weight: bold;;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 10px;
+}
+.valor{
+    color: rgb(255, 255, 255);
+    animation: neon 1s ease-in-out infinite alternate;
+    
+        
+}
 
+@keyframes neon {
+    from {
+        text-shadow: 
+        0 0 4px rgb(0, 247, 255),
+        0 0 10px rgb(0, 247, 255),
+        0 0 30px rgb(0, 0, 156),
+        0 0 50px rgb(0, 0, 156),
+        0 0 70px rgb(0, 0, 156),
+        0 0 90px rgb(0, 0, 156); 
+    }
+    to {
+        text-shadow: 
+        0 0 2px rgb(0, 247, 255),
+        0 0 5px rgb(0, 247, 255),
+        0 0 15px rgb(0, 0, 156),
+        0 0 25px rgb(0, 0, 156),
+        0 0 35px rgb(0, 0, 156),
+        0 0 45px rgb(0, 0, 156); 
+
+    }
+}
+
+@media screen and (min-width:650px) and (max-width: 1100px){
+    body{
+        background-size: 130%;
+        background-position: 57.5% 50%;
+    }
+}
+@media screen and (min-width:450px) and (max-width:650px) {
+    body{
+        background-size: 170%;
+         background-position: 54% 50%;
+
+    }
+   
+}
+@media screen and (max-width:450px){
+    body{
+        background-size: 210%;
+         background-position: 53% 50%;
+
+    }
+   
+}

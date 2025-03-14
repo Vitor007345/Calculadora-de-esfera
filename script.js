@@ -33,9 +33,9 @@ function printAll(){
     const Pcomp = document.getElementById('comprimento');
     const Parea = document.getElementById('area');
     const Pvol = document.getElementById('volume');
-    Pcomp.innerText = `O comprimento é: ${comp.toFixed(2)}`;
-    Parea.innerText = `A área é: ${area.toFixed(2)}`;
-    Pvol.innerText = `O volume é: ${vol.toFixed(2)}`;
+    Pcomp.innerHTML = `O comprimento é: <span class="valor">${comp.toFixed(2)}</span>`;
+    Parea.innerHTML = `A área é: <span class="valor">${area.toFixed(2)}</span>`;
+    Pvol.innerHTML = `O volume é: <span class="valor">${vol.toFixed(2)}</span>`;
 
 }
 
