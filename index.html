@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de esferea</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="raio">
+            <p>Calculadora de esfera</p>
+            <input id="inputRaio" type="text" placeholder="Digite o raio da esfera">
+            <button id="btcalcular" onclick="lerRaio()">Calcular</button>
+        </div>
+        <div class="resultados">
+            <p>C = 2 * π * R</p>
+            <p id="comprimento">O comprimento é:</p>
+            
+        </div>
+        <div class="resultados">
+            <p>A = π * R<sup>2</sup></p>
+            <p id="area">A área é:</p>
+        </div>
+        <div class="resultados">
+            <p>V = <sup>3</sup>/<sub>4</sub> * π * R<sup>3</sup></p>
+            <p id="volume">O volume é:</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
