@@ -1,3 +1,11 @@
+var comp;
+var area;
+var vol;
+
+const inputRaio = document.getElementById('inputRaio');
+const btcalcular = document.getElementById('btcalcular');
+
+
 function calcular(CAV, raio){
     raio = parseFloat(raio);
     switch(CAV){
@@ -21,24 +29,34 @@ function calcular(CAV, raio){
     
 
 }
+function printAll(){
+    const Pcomp = document.getElementById('comprimento');
+    const Parea = document.getElementById('area');
+    const Pvol = document.getElementById('volume');
+    Pcomp.innerText = `O comprimento é: ${comp.toFixed(2)}`;
+    Parea.innerText = `A área é: ${area.toFixed(2)}`;
+    Pvol.innerText = `O volume é: ${vol.toFixed(2)}`;
+
+}
 
 
 function lerRaio() {
-    var raio = parseFloat(document.getElementById('inputRaio').value);
+    let raio = parseFloat(inputRaio.value);
     if(isNaN(raio)){
         console.log("Valor lido não é um número");
         alert("Valor não é um número");
         
     }else{
         console.log(`Valor salvo como: ${raio}`);
-        var comp = calcular('C', raio);
-        var area = calcular('A', raio);
-        var vol = calcular('V', raio);
+        comp = calcular('C', raio);
+        area = calcular('A', raio);
+        vol = calcular('V', raio);
+        printAll();
     }
     
 
 }
-const btcalcular = document.getElementById('btcalcular');
+
 
 btcalcular.addEventListener('mouseup', function(){
     btcalcular.classList.remove('press');
@@ -47,3 +65,11 @@ btcalcular.addEventListener('mousedown', function(){
     btcalcular.classList.add('press');
     lerRaio();
 })
+
+inputRaio.addEventListener('keypress', function(event){
+    if (event.key === 'Enter'){
+        lerRaio();
+    }
+
+})
+
