@@ -35,7 +35,7 @@ function printAll(){
     const Pvol = document.getElementById('volume');
     Pcomp.innerHTML = `O comprimento é: <span class="valor">${comp.toFixed(2)}</span>`;
     Parea.innerHTML = `A área é: <span class="valor">${area.toFixed(2)}</span>`;
-    Pvol.innerHTML = `O volume é: <span class="valor">${vol.toFixed(2)}</span>`;
+    Pvol.innerHTML = `O volume é: <span class="valor">${vol.toFixed(2)}`;
 
 }
 
