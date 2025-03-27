@@ -21,7 +21,7 @@ function calcular(CAV, raio){
             return A;
         case 'V':
             var V;
-            V =  Math.pow(raio, 3) * Math.PI * (3/4);
+            V =  Math.pow(raio, 3) * Math.PI * (4/3);
             console.log(`Volume calculado: ${V}`);
             return V;
             break;
